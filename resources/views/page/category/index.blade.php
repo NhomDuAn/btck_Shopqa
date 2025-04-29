@@ -1,10 +1,17 @@
 @extends('layouts.index')
-@section('title', 'students')
+@section('title', 'category')
 @section('content')
 
-<?php
-echo "Bạn đang xem danh mục $category <br/>";
-echo $data[$category];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nội Dung truyền vào đây</h1>
+    <h2>Thông tin:{{$category ? $category : 'Không có dữ liệu'}}</h2>
 
-?>
-Hello{!! $htmltest !!}
+</body>
+</html>
