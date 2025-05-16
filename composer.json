@@ -3,23 +3,33 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "barryvdh/laravel-dompdf": "3.1.1",
+        "intervention/image-laravel": "1.5.6",
+        "laravel/framework": "12.12.0",
+        "laravel/socialite": "5.20.0",
+        "laravel/tinker": "2.10.1",
+        "laravel/ui": "4.6.1",
+        "pusher/pusher-php-server": "7.2.7",
+        "spatie/laravel-newsletter": "5.3.1",
+        "srmklive/paypal": "3.0.40",
+        "unisharp/laravel-filemanager": "2.10.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.15",
-        "fakerphp/faker": "^1.23",
-        "laravel/pail": "^1.2.2",
-        "laravel/pint": "^1.13",
-        "laravel/sail": "^1.41",
-        "laravel/ui": "^4.6",
-        "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.6",
-        "phpunit/phpunit": "^11.5.3"
+        "fakerphp/faker": "1.24.1",
+        "laravel/pail": "1.2.2",
+        "laravel/pint": "^1.22",
+        "laravel/sail": "1.42.0",
+        "mockery/mockery": "1.6.12",
+        "nunomaduro/collision": "8.8.0",
+        "phpunit/phpunit": "11.5.19"
     },
     "autoload": {
         "psr-4": {
@@ -31,7 +41,10 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "app/Http/Helpers.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": [
