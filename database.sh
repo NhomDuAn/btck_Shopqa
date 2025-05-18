@@ -12,4 +12,4 @@ DB_NAME=$(grep 'DB_DATABASE=' .env | cut -d'=' -f2)
 mysql -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USERNAME" -p"$DB_PASSWORD" -e "CREATE DATABASE IF NOT EXISTS $DB_NAME;"
 
 # Chạy lệnh MySQL để thực hiện script
-mysql -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USERNAME" -p"$DB_PASSWORD" "$DB_NAME" < database/scripts/runner.sql
+mysql -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USERNAME" -p"$DB_PASSWORD" "$DB_NAME" < database/scripts/basicdatabase.sql
